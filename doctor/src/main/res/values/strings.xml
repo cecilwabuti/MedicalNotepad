@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Doctor</string>
+    <string name="title_activity_user">User</string>
+    <string name="signature">signature</string>
+    <string name="save_prescription">Save Prescription</string>
+    <string name="save_examination">Save Examinations</string>
+    <string name="share">share</string>
+    <string name="search_patient">search patient</string>
+    <string name="new_documents">New Documents</string>
+    <string name="name">Name:</string>
+    <string name="records">Records</string>
+    <string name="examination">EXAMINATION</string>
+    <string name="prescription">PRESCRIPTION</string>
+    <string name="create_page">Create Page</string>
+    <string name="medical_records">medical records</string>
+    <string name="newdoc">new_documents</string>
+</resources>

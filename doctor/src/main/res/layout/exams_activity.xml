@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Scribbles.Exams">
+
+     <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:id="@+id/Sp_container"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentLeft="true"
+         android:layout_marginBottom="52dp">
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="100dp"
+
+         android:layout_alignParentStart="true"
+         android:layout_alignParentLeft="true"
+
+         android:layout_below="@+id/signature_pad"
+         android:text="@string/signature"
+         android:textSize="36sp" />
+
+
+          <com.github.gcacace.signaturepad.views.SignaturePad
+              android:id="@+id/signature_pad"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_alignParentStart="true"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentTop="true"
+              android:layout_marginStart="8dp"
+              android:layout_marginLeft="8dp"
+              android:layout_marginTop="1dp"
+              app:penColor="@android:color/black"
+              app:penMaxWidth="2sp" />
+     </RelativeLayout>
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/btn_container"
+         android:paddingTop="16sp"
+         android:orientation="horizontal"
+         android:layout_alignParentBottom="true" >
+
+          <Button
+              android:id="@+id/save_button"
+              android:layout_width="206dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:clickable="true"
+              android:onClick="SavedE"
+              android:enabled="false"
+              android:text="@string/save_examination"
+              android:focusable="true" />
+     </LinearLayout>
+
+</RelativeLayout>

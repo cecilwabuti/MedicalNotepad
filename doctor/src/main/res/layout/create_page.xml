@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_Prescription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/heading_label"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/nunito_semibold_italic"
+        android:includeFontPadding="true"
+        android:text="@string/create_page"
+        android:textColorLink="#555555"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/text_newexams"
+        android:layout_width="286dp"
+        android:layout_height="64dp"
+        android:clickable="true"
+        android:onClick="CReatePage"
+        android:fontFamily="@font/nunito_bold"
+        android:text="New Examination"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/text_newprescription"
+        android:layout_width="284dp"
+        android:layout_height="65dp"
+        android:clickable="true"
+        android:onClick="CReatePage"
+        android:fontFamily="@font/nunito_bold"
+        android:text="New Prescription"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/textcreate_save"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="80dp"
+        android:clickable="true"
+        android:fontFamily="@font/nunito_black"
+        android:includeFontPadding="true"
+        android:onClick="Saved"
+        android:text="Done_backUser"
+        android:textSize="28sp" />
+
+</LinearLayout>

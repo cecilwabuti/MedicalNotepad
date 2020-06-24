@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Gallery.ImageMainActivity">
+
+
+    <TextView
+        android:id="@+id/g_exams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-regular"
+        android:padding="14dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:text="@string/examination"
+        android:textAllCaps="true"
+        android:textSize="15sp" />
+
+
+    <GridView
+        android:id="@+id/gridViewE"
+        android:layout_width="match_parent"
+        android:layout_height="319dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+    <TextView
+        android:id="@+id/g_prescript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-regular"
+        android:layout_marginTop="50dp"
+        android:padding="14dp"
+        android:text="@string/prescription"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+
+    <GridView
+        android:id="@+id/gridViewP"
+        android:layout_width="match_parent"
+        android:layout_height="368dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        android:visibility="visible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+
+
+</LinearLayout>

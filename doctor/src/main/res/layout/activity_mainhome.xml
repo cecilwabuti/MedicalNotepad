@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/search_patient">
+
+        <requestFocus />
+    </SearchView>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:id="@+id/listview"
+        android:dividerHeight="1dp"
+        android:scrollbarSize="50dp"
+        android:alwaysDrawnWithCache="true"
+        android:fastScrollAlwaysVisible="true"
+        android:fastScrollEnabled="true"
+        android:scrollbarDefaultDelayBeforeFade="@android:integer/config_longAnimTime"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search" />
+
+</RelativeLayout>
